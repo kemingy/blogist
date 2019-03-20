@@ -22,5 +22,15 @@ Generate personal blog from user's GitHub gists.
 3. updated time
 4. description
 5. commonts
-6. *categories [cate1,cate2,cate3...]
-7. user GitHub profile
+6. *categories [cate1,cate2,cate3...]*
+7. *user GitHub profile*
+8. *@ GitHub users*
+9. *GitHub [octicons](https://octicons.github.com/)*
+
+## Which one to choose?
+
+| Generator     | Jekyll        | Hugo  | Hexo      |
+|:-------------:|:-------------:|:-----:|:---------:|
+| Language      | Ruby          | Go    |Javascript |
+| Theme         | [Alembic](https://github.com/daviddarnes/alembic) | [Minimal](https://github.com/calintat/minimal) | [NexT](https://github.com/theme-next/hexo-theme-next) |
+| Support       | :tada: | :x: | :x: |
