@@ -24,11 +24,10 @@ setup(
     packages=find_packages(exclude=['examples*', 'tests*']),
     package_data={},
     classifiers=[
-        'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT',
-        'Operating System :: OS Indenpendent',
+        'Programming Language :: Python :: 3.7',
     ],
     install_requires=requires,
+    python_requires='>=3.7',
     extras_require={},
     entry_points={
         'console_scripts': ['blogist=blogist:main'],
