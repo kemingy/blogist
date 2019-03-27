@@ -81,9 +81,9 @@ class Gist:
         if url is None:
             return []
         resp = self.session.get(url)
+        comments = []
         if resp.ok:
             data = resp.json()
-            comments = []
             for comment in data:
                 user = comment.get('user', {})
                 comments.append(Comment(
@@ -99,10 +99,18 @@ class Gist:
                     comment.get('updated_at'),
                 ))
 
+        return comments
+
     def store(self, path: str):
         if not os.path.isdir(path):
             os.mkdir(path)
 
         for post in self.posts:
             with open(os.path.join(path, self.generate_file_name(post)), 'w', encoding='utf-8') as f:
+                f.write(f'---\ntitle: {post.title.rsplit(".", 1)[0]}\n---\n')
+                f.write(f'\n{post.description}\n\n<!--more-->\n\n')
                 f.write(post.body)
+                if post.comments:
+                    f.write('\n\n')
+                    for com in post.comments:
+                        f.write(f'[commont@{com.user.login}] [{com.created_at}] ({com.body})\n')

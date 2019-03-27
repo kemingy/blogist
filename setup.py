@@ -14,7 +14,7 @@ with open(path.join(here, 'requirements.txt'), encoding='utf-8') as f:
 
 setup(
     name='blogist',
-    version='0.0.1',
+    version='0.0.2',
     author='keming',
     author_email='kemingy94@gmail.com',
     description="a tool to get user's blog posts from GitHub Gist",
