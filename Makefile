@@ -2,7 +2,7 @@ install:
 	pip install -e .
 
 test:
-	py.test tests
+	pytest tests
 
 doc:
 	cd docs && make html

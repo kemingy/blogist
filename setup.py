@@ -17,7 +17,7 @@ setup(
     version='0.0.1',
     author='keming',
     author_email='kemingy94@gmail.com',
-    description="a tool to get user's blog from GitHub Gists",
+    description="a tool to get user's blog posts from GitHub Gist",
     long_description=readme,
     long_description_content_type='text/markdown',
     url='https://github.com/kemingy/blogist',
@@ -31,6 +31,6 @@ setup(
     install_requires=requires,
     extras_require={},
     entry_points={
-        'console_scripts': [],
+        'console_scripts': ['blogist=blogist:main'],
     },
 )

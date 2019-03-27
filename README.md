@@ -1,12 +1,12 @@
 # blogist
 
-Generate personal blog from user's GitHub gists.
+Generate personal blog posts from user's GitHub Gist.
 
 ## features
 
 - [ ] build with CI/CD tools
 - [ ] comments are extract from gist comments
-- [ ] use Jekyll, just like the default setting of GitHub Pages
+- [ ] ~~use Jekyll, just like the default setting of GitHub Pages~~
 
 ## Start
 
@@ -15,7 +15,7 @@ Generate personal blog from user's GitHub gists.
 3. setup CI/CD
 4. build your blog
 
-## What can be extracted from gists?
+## What can be extracted from Gist?
 
 1. post name
 2. created time
